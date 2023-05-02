@@ -3,7 +3,6 @@
 - <b>We are constantly investigating clever workarounds that allow us to utilize the full potential of ChatGPT.
 ---
 
-- <https://chat.openai.com/>
 <!--
 - [Is ChatGPT "DAN" Real? Gonna find out [Part 1]](https://www.youtube.com/watch?v=-q8woRG9FrI) \
   (<https://www.youtube.com/watch?v=-q8woRG9FrI>)
