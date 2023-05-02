@@ -1,0 +1,797 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>30 Prompts tổng hợp</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a1c5d0af-c882-4fa6-8d4f-4a5451872ca9" class="page sans"><header><img class="page-cover-image" src="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/cover_4-transformed.png" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🤖</span></div><h1 class="page-title">30 Prompts tổng hợp</h1></header><div class="page-body"><p id="b064b048-405e-4122-8ede-9193f086abf1" class=""><em>Bạn chưa có tài khoản chat GPT? tạo </em><a href="https://forms.gle/Re6r7VKPMp7cJtTW9"><em>tài khoản chat GPT</em></a><em> tại đây hoặc nâng cấp lên </em><a href="https://forms.gle/uL7mWW39jwcQYAok8"><em>chat GPT plus</em></a><em> </em></p><h2 id="0287e391-83ba-4dbb-9b70-8b0aa42a1d82" class="">✍🏼Writing</h2><ul id="34aac456-cbba-4166-90f2-cedeac0e9aba" class="toggle"><li><details open=""><summary>COPYWRITING</summary><p id="10bed4e3-ea5c-406b-bfea-7681c1d028a8" class="">Bạn hãy đóng vai copywriter với 10 năm kinh nghiệm. Tôi sẽ cung cấp cho bạn một sản phẩm và khách hàng mục tiêu. Bạn sẽ tạo slogan và copy của sản phẩm với các phong cách viết khác nhau bao gồm AIDA, PAS, Hook- story- Offer ở định dạng bảng.</p><p id="209b9551-dbf1-468f-9300-31795f9cda39" class="">Yêu cầu đầu tiên của tôi: &quot;Sản phẩm: <mark class="highlight-red">Một loại bàn mới có thể dễ dàng điều chỉnh thành nhiều hình dạng khác nhau để sử dụng thuận tiện hơn</mark>. Đối tượng: <mark class="highlight-red">Thanh niên từ 19-35 tuổi</mark>&quot;</p></details></li></ul><ul id="ef69f588-c0c6-409b-b728-4a99ba753cd8" class="toggle"><li><details open=""><summary>WRITING ASSISTANT</summary><p id="d756d29a-207e-41b0-921b-cdbfd90c4c6c" class="">[INSTRUCTION] tôi có một {văn bản} tôi muốn chỉnh sửa. Tạo ra một table bao gồm 5 gợi ý khác nhau có liên quan đến {văn bản} với số thứ tự ở collumn bên trái để tôi có thể chọn. Sau khi tạo table, hỏi tôi &quot;Bạn muốn cải thiện {văn bản} như thế nào, hãy chọn một mục trong bảng bên trên&quot; bên dưới. Xác nhận với &quot;...&quot; nếu bạn hiểu task, chưa tạo table lúc này.</p><p id="f1ecc23a-e54c-4306-b359-de13d0e86089" class="">Text =<mark class="highlight-red"> Huân Rose là một người có tên tuổi trong cộng đồng trẻ, được biết đến với danh hiệu &quot;thầy&quot; do sự giảng dạy tận tình của mình trên các chương trình livestream. Anh ta luôn muốn truyền đạt cho học trò cách cư xử tốt, và chỉ cho học trò 9,5 điểm nếu họ thực sự hoàn thành tốt nhiệm vụ. Câu nói yêu thích của anh ấy &quot;Không làm đòi có ăn thì ăn đòu bòi ăn cức&quot; là một thông điệp sống động, nhắc nhở mọi người phải làm việc tốt để có kết quả tốt, mà không phải đòi hỏi hoặc mong đợi quá nhiều.</mark></p><p id="d2f3cd48-6bf1-492b-a7e5-64f2bec0d302" class="">add a log of the change column. Execute the INSTRUCTION in a table format:</p></details></li></ul><ul id="afdd51ce-6d42-445b-bb0f-cde57994b0c5" class="toggle"><li><details open=""><summary>GENERATE IDEAS</summary><p id="11b0254e-ec77-459b-8203-359b0d94e559" class="">Can you give me ideas for [format] about [subject], perhaps
+covering [topics]?</p><p id="857f44ab-677e-46f1-8c53-5e84ebafb2d9" class="">
+</p><p id="0324b2c8-b4d2-4ccc-b55f-1a24b4690cb3" class="">Examples: </p><ul id="cb7011b1-19c6-4364-b568-14240a8cafe1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you give me ideas for a podcast about mental health, perhaps covering topics like self-care, therapy, and mindfulness?</mark></li></ul><p id="de1d638d-06f5-46a5-a2e2-e6f0e42a8937" class="">
+</p><ul id="e4382e47-e4b2-4b45-aacd-4a8172a16642" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể cho tôi ý tưởng về một podcast về sức khỏe tâm thần, có thể bao gồm các chủ đề như chăm sóc bản thân, trị liệu và chánh niệm không?</mark></li></ul></details></li></ul><ul id="ed9fb44a-9405-4e17-b5df-690257685ea1" class="toggle"><li><details open=""><summary>WRITE ANYTHING</summary><p id="11e7cca6-dce3-4ee8-b607-9b24b2b6ee97" class="">Can you write a [type of text] for the [subject] in [location],
+outlining the [benefits] offered by the [subject]?</p><p id="26e152a7-7db9-491d-b403-99b3838ff900" class="">
+</p><p id="ec383441-af4b-47fe-8c1d-58f4f4d1010f" class="">Example:</p><ul id="f86e82e5-0e20-4cf4-82d5-cd933f38b937" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you write a Facebook ad for the best marketing agency
+in Viet Nam, outlining the services and benefits offered by
+the agency?</mark></li></ul><p id="ac190e35-e3bb-4351-8027-c5f9c9575bd4" class="">
+</p><ul id="d04f8741-b911-4a97-a291-889cc8916e74" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể viết quảng cáo trên Facebook cho agency tốt nhất
+tại Việt Nam và phác thảo các dịch vụ và lợi ích được cung cấp bởi
+agency này không?</mark></li></ul></details></li></ul><ul id="25e56321-e825-4a97-a582-6352c038f0b9" class="toggle"><li><details open=""><summary>EMAIL SUBJECTS</summary><p id="5e660e42-d8d4-4bcc-8e5f-7ef2a6f6a3a8" class="">Can you write me [number] email subject lines for [type of
+email] to [target audience]?</p><p id="19cecae3-830b-4d8c-b99c-4d829cf265c1" class="">
+</p><p id="f1f8951d-3d94-4fae-8e80-d9d52455902f" class="">Example:</p><ul id="6e4a51ce-eb12-488f-b427-ae73586c2eb8" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you write me 10 emails with subject lines for a welcome email of a weight loss product to women aged 24- 45?</mark></li></ul><p id="b1daa96c-e932-4c89-b23d-fe7bf77ebb6a" class="">
+</p><ul id="5651faf4-190e-4608-9678-38e7e59d21cb" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể viết cho tôi 10 email với tiêu đề email chào mừng về một sản phẩm giảm cân cho phụ nữ trong độ tuổi 24-45 được không?</mark></li></ul></details></li></ul><ul id="0a58732e-c43e-4893-9ced-33698ef972f7" class="toggle"><li><details open=""><summary>SOCIAL MEDIA PROFILES</summary><p id="170a5bd1-3aae-4384-ac53-0a9887289080" class="">Can you write a [type of profile] for me, highlighting [interests/personality] in a way that is likely to attract [audience]?</p><p id="cd870b42-c82f-455d-9523-8e92b56e56e0" class="">
+</p><p id="447a8fbb-e581-44fe-81ba-ae1248ffac46" class="">Example:</p><ul id="f280ad00-1cef-4a67-902f-0c24da3b4912" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you write a LinkedIn profile for me, highlighting my interests/personality in a way that is likely to attract potential employers?</mark></li></ul><p id="29ccdf8d-4135-46f0-836c-61589702e7c0" class="">
+</p><ul id="4504eca2-0e4e-4c18-af3f-622995235457" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể viết một hồ sơ LinkedIn cho tôi, làm nổi bật sở thích/tính cách của tôi theo cách có khả năng thu hút các nhà tuyển dụng tiềm năng không?</mark></li></ul><p id="80b3830e-d5f2-460d-9aeb-1a296b49bc03" class="">
+</p></details></li></ul><ul id="1a159612-f2f7-49bd-984e-2b8053de42fd" class="toggle"><li><details open=""><summary>VIDEO SCRIPTS</summary><p id="49e90684-8e10-4df3-a259-c0793303eb17" class="">Can you write a [type of text] on the topic of [subject] [additional details]?</p><p id="7ff24b77-0a3b-4adb-9b77-43ef28eeebcc" class="">
+</p><p id="27fcb138-9aaf-4419-afd5-43ef519aeed5" class="">Example:</p><ul id="ea63986c-fbdf-4885-98bc-2b89161bc088" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you write a research paper on the topic of mental health in the workplace, exploring the prevalence and impact of stress and burnout?</mark></li></ul><p id="50b0dc1d-b398-4662-a21d-aff89c759165" class="">
+</p><ul id="528a50d1-ec25-44e7-b065-58c2bc7a94c5" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể viết một bài nghiên cứu về chủ đề sức khỏe tâm thần tại nơi làm việc, khám phá mức độ phổ biến và tác động của căng thẳng và kiệt sức không?</mark></li></ul><p id="ab739c40-7b81-47f5-8a47-4abfad73ebe3" class="">
+</p><p id="774c1789-8d08-4f79-b543-5b2ce623df7a" class="">
+</p></details></li></ul><ul id="7678b199-6722-46f6-a35c-490708932466" class="toggle"><li><details open=""><summary>MESSAGES</summary><p id="674ba117-be77-4796-b6d7-745c1a064550" class="">Can you come up with [number] [type of text] for [platform]
+that include [references]?</p><p id="e2d130e8-4924-482a-8150-91908506aaf0" class="">
+</p><p id="357cb6d3-a98d-41ff-8729-d535b620cb7b" class="">Example:</p><ul id="89042052-7e1a-4f66-86e3-0b3f57aae79b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Can you come up with 10 social media posts for Instagram that include quotes from influential figures?</mark></li></ul><p id="f166192f-498b-4f3c-abd2-1d440a5e64cc" class="">
+</p><ul id="28b688ff-3cc0-4cb6-bfe5-73bc45be521c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Bạn có thể nghĩ ra 10 bài đăng trên mạng xã hội cho Instagram bao gồm các trích dẫn từ những nhân vật có ảnh hưởng không?</mark></li></ul><p id="0c11037f-c86c-4eb4-b918-0a07880f5260" class="">
+</p></details></li></ul><ul id="3bc3ede0-2e2a-4900-a70d-e34f642c2399" class="toggle"><li><details open=""><summary>PRODUCT COPY</summary><p id="a030d831-6575-4bfd-8785-c5b441d1e551" class="">Write features, advantages, and benefits sales page about [describe your product]  [name]?</p><p id="909f7a5e-caf2-485b-a183-b94f168a3f1e" class="">
+</p><p id="782c805d-7923-418d-a739-8d03d0d638d9" class="">Example:</p><ul id="d36d5ed8-581d-45e5-978a-2ec9ab77266f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Write features, advantages, and benefits sales page about a water bottle that can keep the heat all day name LOCK&amp;LOCK?</mark></li></ul><p id="81f8bb78-a4ec-40f8-baf0-6761480e30a6" class="">
+</p><ul id="011af3dc-8c36-40de-8883-a079b7597085" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Viết trang bán hàng có đặc điểm, ưu điểm và lợi ích về bình nước giữ nhiệt cả ngày tên LOCK&amp;LOCK?</mark></li></ul><p id="8d0ea20d-2fb7-4b40-a683-77a215cda6c6" class="">
+</p></details></li></ul><ul id="f82adcd2-178e-4a7f-8e3d-aaeccd44d422" class="toggle"><li><details open=""><summary>INSIGHTS</summary><p id="de42ebfa-7c2b-437b-b163-a4ba401ac4c7" class="">Generate 10 questions people may have about [describe your product] then the [name]</p><p id="67b3a7e0-1130-4510-aa75-16eff15009d9" class="">
+</p><p id="6373e0cf-2e0a-442b-87d5-ab5af704e023" class="">Example:</p><ul id="a3eeaecc-bdbc-4ff1-aeca-602e992daf06" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Generate 10 questions people may have about a waterproof sneaker name pelt</mark></li></ul><p id="bda02f91-8c73-46c6-b4a0-4566a911709f" class="">
+</p><ul id="c579d69b-9f55-40cc-a84f-b1246d6f8e81" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Tạo ra 10 câu hỏi mà mọi người có thể có giày thể thao không thấm nước tên là pelt</mark></li></ul></details></li></ul><ul id="cd8db8ec-8bc9-47ec-8caa-957bb20e9054" class="toggle"><li><details open=""><summary>BLOG POST PROMPTS</summary><p id="aed99ed0-357f-46c4-bfca-c6036ddf6c07" class="">Generate 10 blog ideas for (describe your blog topic)</p><p id="2f261ec9-a1ed-44f7-a74c-8d8cc09612e8" class="">Generate 20 blog keyword ideas for (describe your topic or niche)</p><p id="21131462-07ea-4662-ae90-51575cbd4984" class="">Write a blog outline for (describe your blog topic)</p><p id="faae5727-aa05-42b5-9d0b-ca41ec0712d0" class="">Write a blog intro for (describe your blog topic)</p><p id="8e0bfd96-e2a8-43d3-b1e1-c38c47695b90" class="">Write 10 bullet points about (insert blog topic)</p><p id="d4d143c7-a38b-4cc7-b791-a8a8ec26c08a" class="">Write a blog conclusion for (insert blog topic)</p><p id="acbc7351-84c9-47f5-8fbe-e86f3d3c1d42" class="">Write an entire blog section based on (insert bullet point or headline)</p><p id="9655b901-5b59-4500-813f-fffda887e1b6" class="">
+</p><p id="63efeb8c-d68e-46bb-87dd-f0b32a307b5f" class="">Tạo 10 ý tưởng blog cho (mô tả chủ đề blog của bạn)</p><p id="d8a9cb3c-d3fe-4a35-a51e-71dcd3902aee" class="">Tạo 20 ý tưởng từ khóa blog cho (mô tả chủ đề hoặc thị trường ngách của bạn)</p><p id="c2268eb5-bdbc-4a45-b2a2-04d139836273" class="">Viết phác thảo blog cho (mô tả chủ đề blog của bạn)</p><p id="7e752b69-76d2-4f1e-ba1b-ddf669541f35" class="">Viết phần giới thiệu blog cho (mô tả chủ đề blog của bạn)</p><p id="642b1f43-4b47-4c7e-814b-1fdf33cadb81" class="">Viết 10 gạch đầu dòng về (chèn chủ đề blog)</p><p id="79e8fab0-49d1-41e3-875e-43c3c1eee100" class="">Viết một kết luận blog cho (chèn chủ đề blog)</p><p id="16ccf394-1f18-47c5-989a-b6bba272ec3e" class="">Viết toàn bộ phần blog dựa trên (chèn dấu đầu dòng hoặc tiêu đề)</p></details></li></ul><ul id="bf4ed1cc-d7e2-4542-b56f-864cd97388c2" class="toggle"><li><details open=""><summary>EMAIL MARKETING PROMPTS</summary><p id="68aefa10-61d7-4472-83bd-b445b790b4b5" class="">
+</p><p id="c85672c5-1131-45c1-acc1-629ee4669fbd" class="">Generate 10 catchy subject lines for (describe your product,service, or topic)</p><p id="1ed12874-a550-4335-8c92-6a9c8a141e1e" class="">Generate 10 lead magnet ideas for (describe your product,service, or topic)</p><p id="f555bc11-4a15-47aa-8e4c-2676f0b3b00f" class="">Write preview text for (insert your headline or sales copy)</p><p id="baec988c-0b54-416b-b807-821a1308b95f" class="">Write a welcome email for (describe your product,service, or topic)</p><p id="24fa0234-bd46-41b0-ba1e-b74efcd8c1b5" class="">Write a social proof email for (describe your product,service, or topic)</p><p id="f0e08313-a8ec-48d6-bdcf-2ab851fd94b0" class="">Write an abandoned cart email for (describe your product,service, or topic)</p><p id="e2a6fada-4f81-41fb-9ef7-702940b665ea" class="">Write a cancelation email for (describe your product,service, or topic)</p><p id="bed7882e-ce97-4847-8e3b-e63bc08db1e5" class="">Write a sales email in the AIDA model for (describe your product,service, or topic</p><p id="1567359c-6ca2-4652-b697-0e9ecb409984" class="">
+</p><p id="f8e3455b-4590-4220-811d-d5d2f82ad3f4" class="">Tạo 10 dòng chủ đề hấp dẫn cho (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="ab58a454-90db-4ac2-ad30-48aeb960563c" class="">Tạo 10 ý tưởng nam châm dẫn cho (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="baf96a8a-d662-4b15-80e3-f98d9571573f" class="">Viết văn bản xem trước cho (chèn tiêu đề hoặc bản sao bán hàng của bạn)</p><p id="903d5967-98fb-4b5e-bf02-e68c3d771304" class="">Viết email chào mừng (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="e15988ee-188a-4da6-a8dd-f6330cf6c2eb" class="">Viết email bằng chứng xã hội cho (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="c8222d07-6086-4481-930d-e19071c38991" class="">Viết email về giỏ hàng bị bỏ rơi (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="8cd2ce51-94f2-4db4-a575-1fc443958bd1" class="">Viết email hủy bỏ (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="8e6dfe2c-c86b-45aa-ad1d-4cb79b88726c" class="">Viết email bán hàng theo mô hình AIDA cho (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn</p></details></li></ul><ul id="b8c58eb4-ca5d-4f3d-bfab-2306be9a0707" class="toggle"><li><details open=""><summary>VIDEO SCRIPT PROMPTS</summary><p id="c2ce8ca7-bf13-46b3-bf12-f0fac64fad11" class="">
+</p><p id="68cb4a69-7697-44e8-8fa3-b4da659e3ffc" class="">Generate 10 youtube video ideas for (insert topic)</p><p id="1c52e141-f5dd-4b13-83d1-f1186653d02f" class="">Write a video script with outline about (insert topic)</p><p id="b20777a0-d83a-473a-87e4-cb1d8fc2d9f0" class="">Generate tags for a youtube video about (describe your topic or insert headline)</p><p id="ba93349d-11f0-4def-8256-5af43f27c219" class="">Generate 10 catchy subject lines for a youtube video about (describe your topic or insert headline)</p><p id="52fb3fa1-0227-4809-97dd-0c636d6d7910" class="">Write a compelling hook for a video about (insert topic)</p><p id="cc2fdef9-b07e-4f82-887f-5d40536858fe" class="">generate a youtube video description with an engaging into about (insert topic)</p><p id="177de349-0796-43fe-afff-359b97519abb" class="">
+</p><p id="38ebb445-6614-4c7a-beee-97b994c453ab" class="">Tạo 10 ý tưởng video youtube cho (chèn chủ đề)</p><p id="d150b24c-fb9b-4876-a282-8bf8c00a9c49" class="">Viết kịch bản video có dàn ý về (chèn chủ đề)</p><p id="40370461-74a6-4b30-907e-77e2b62a1cd3" class="">Tạo thẻ cho video youtube về (mô tả chủ đề của bạn hoặc chèn tiêu đề)</p><p id="55e103e9-7c2f-4704-8a9b-2a10fa7cd221" class="">Tạo 10 dòng chủ đề hấp dẫn cho video youtube về (mô tả chủ đề của bạn hoặc chèn tiêu đề)</p><p id="8e19508c-0903-43ca-9a57-a304f5108c43" class="">Viết đoạn giới thiệu hấp dẫn cho video về (chèn chủ đề)</p><p id="6f7f30f4-b5f6-42bb-9f82-a1a4c15ffd79" class="">tạo mô tả video youtube hấp dẫn về (chèn chủ đề)</p></details></li></ul><ul id="48b75b84-5db2-44f4-8c39-3ae52be06aaa" class="toggle"><li><details open=""><summary>STORYTELLING PROMPTS</summary><p id="9affd90e-78d8-4c26-ba57-e5097ea65d77" class="">
+</p><p id="b8450d87-8595-40ae-9d57-be5c0e23c319" class="">Write a hero story into about (insert topic or idea)</p><p id="021e28cd-6c2c-4e87-a419-f0c24bb95330" class="">Write hero story villain for (insert topic or idea)</p><p id="74fe9e1a-9de1-43f7-b816-56e427314f03" class="">Write a interesting story in only two sentences about (insert topic or idea)</p><p id="77a47840-d311-4f10-a9c6-3b1671c7f4f0" class="">(insert copy) rewrite copy in a more compelling, active voice.</p><p id="28804d03-2755-4c4c-943d-52c11d10be49" class="">(insert copy) rewrite copy with the keywords (insert keywords)</p><p id="1fd67aa4-fde1-46d1-99c4-71a90047c3a2" class="">(insert copy) rewrite text with the same meaning but different tone.</p><p id="79cb4593-44f9-480e-a8b4-4395cbfd32ab" class="">(insert sentence) generate powerful alternatives to this sentence.</p><p id="9cbe7add-c399-4a09-b240-f5238279b426" class="">(insert sentence) Rephrase sentence to have fewer words.</p><p id="efe52cdf-bdb2-4954-ba40-cdf3058a776d" class="">
+</p><p id="a3e6632f-af41-4600-ada6-bf700c122a82" class="">Viết một câu chuyện về anh hùng cho (chèn chủ đề hoặc ý tưởng)</p><p id="d9fa435e-94fa-45d6-8222-84638b6e925d" class="">Viết câu chuyện về phản diện cho (chèn chủ đề hoặc ý tưởng)</p><p id="c16b2b5a-05a1-4ad3-87ab-a08e650deb27" class="">Viết một câu chuyện thú vị chỉ trong hai câu về (chèn chủ đề hoặc ý tưởng)</p><p id="cd7bb524-7ce7-47ca-9490-984b3c2f3022" class="">(chèn bản sao) viết lại bản sao bằng giọng điệu tích cực, hấp dẫn hơn.</p><p id="e7520bcd-34f9-4022-84ef-4dfb82c9d0ec" class="">(chèn bản sao) viết lại bản sao với từ khóa (chèn từ khóa)</p><p id="9e5c15d0-52ab-4ef5-88c9-fcba96994aa5" class="">(chèn bản sao) viết lại văn bản với cùng ý nghĩa nhưng giọng điệu khác nhau.</p><p id="91aaf0e3-681c-4b30-8473-c8206412767c" class="">(chèn câu) tạo ra các lựa chọn thay thế mạnh mẽ cho câu này.</p><p id="9925d0aa-dd52-4a4f-b72e-850d1389c998" class="">(chèn câu) Viết lại câu để có ít từ hơn.</p></details></li></ul><ul id="d1935167-1301-431f-aff3-092a5696d483" class="toggle"><li><details open=""><summary>TWITTER CONTENTS PROMPTS</summary><p id="869097c4-9855-4b0b-8299-dd2f2c47a897" class="">
+</p><p id="f23b0f26-d3f9-463c-8293-e524e84cb6a3" class="">Generate 10 tweet ideas about (insert topic)</p><p id="c56e0e3d-2054-4bfa-afd8-2aa470efdfc8" class="">Write a short compelling tweet about (insert topic)</p><p id="9eff6956-9f74-476b-9fde-d76f74d89745" class="">Write a tweet headline that will get attention about (insert topic)</p><p id="dbb41c0c-4e2d-4858-8979-d46abe1f1aa5" class="">Write a tweet hook about (insert topic)</p><p id="67a0f0ea-d7c0-40e9-941c-620c4b457ad8" class="">Write a short text hook about (insert topic)</p><p id="8d032ddb-d470-4bdb-92a0-ebe71efb817c" class="">Write a product sales tweet promoting (insert product or service)</p><p id="68878865-9e24-40e0-86a1-0cd52d849163" class="">Write a relatable experience tweet about (insert topic)</p><p id="71f239f2-7a79-496a-aa82-a1be465469e4" class="">Write a full Twitter thread about (insert headline or topic)</p><p id="a772e6bf-44f7-4804-8f7b-d9fa2ee13b1b" class="">(insert tweet) rewrite</p><p id="a2c10955-8fdf-4c3d-a315-ab314fbb5f03" class="">generate shower thoughts about (insert topic)</p><p id="07919b60-7f80-446a-baa6-8a4f7fe74e3c" class="">Generate hard truths about (insert topic)</p><p id="d89ba986-db06-43e8-a4ff-f3fab93a80e4" class="">
+</p><p id="522734e0-bccd-4604-b035-60a229b82014" class="">Tạo 10 ý tưởng tweet về (chèn chủ đề)</p><p id="ba54a005-dd2f-4481-874a-c00f20c79fa2" class="">Viết một tweet ngắn hấp dẫn về (chèn chủ đề)</p><p id="ba951872-7320-49d5-b037-17e987ea58f2" class="">Viết một tiêu đề tweet sẽ thu hút sự chú ý (chèn chủ đề)</p><p id="149c0eab-867c-40d9-81d4-2bddea97b262" class="">Viết một tweet hook về (chèn chủ đề)</p><p id="7a918abd-21ba-46ab-9d00-b80029c9f57c" class="">Viết một đoạn văn ngắn về (chèn chủ đề)</p><p id="a98fad30-f3e2-4aeb-aa1a-215a28895257" class="">Viết một tweet bán sản phẩm quảng cáo (chèn sản phẩm hoặc dịch vụ)</p><p id="a1e19405-e547-4b34-84e5-56c132f2604e" class="">Viết một tweet trải nghiệm có liên quan về (chèn chủ đề)</p><p id="e78a1b4f-4af3-40d7-a5fa-79b98d57d324" class="">Viết một chủ đề Twitter đầy đủ về (chèn tiêu đề hoặc chủ đề)</p><p id="e55b87e4-2727-4bb6-8f49-10382347264f" class="">(chèn tweet) viết lại</p><p id="ae634f57-e13c-44d2-bdea-97d5b5d47f4c" class="">tạo ra những suy nghĩ về vòi hoa sen về (chèn chủ đề)</p><p id="4c63d047-1b53-48d4-9b2b-d3bf22f8ac76" class="">Tạo ra những sự thật phũ phàng về (chèn chủ đề)</p></details></li></ul><ul id="98e04e55-8939-43aa-ab4b-561f7afeca78" class="toggle"><li><details open=""><summary>INSTAGRAM PROMPTS</summary><p id="ad0d50c1-10f5-4449-a86e-5fea3488a900" class="">
+</p><p id="b5e0efff-2a26-45cd-a342-54596fce882a" class="">Generate 10 instagram post ideas about (instert topic)</p><p id="ad85177c-beec-4873-ba04-6782a6c60ce8" class="">Generate 10 Viral giveaway captions about(inster product, service, or topic) asking people to share and like to enter</p><p id="6e262feb-a3a2-4ccc-97d6-c4bb80be7284" class="">Generate 10 instagram captions for(insert topic)</p><p id="96dbd175-961e-4de4-920a-d81b98221b73" class="">Generate 20 hashtags for (instert instagram caption)</p><p id="ba0eb136-fbe5-4f6c-b48d-72ce44537f6f" class="">Create a instagram product showcase for (instert product followed by name)</p><p id="b490c5ac-833c-4408-94d2-30b2bd246cdb" class="">(instert instagram caption) Rewrite</p><p id="36278ab5-8b46-4e2e-9e86-5288ea8726bb" class="">Write a compelling Instagram caption about (insert topic)</p><p id="465a1772-2071-46f2-a75a-432d4a6b5892" class="">
+</p><p id="0ed06ffc-3040-4caf-8fe2-cb96720878a7" class="">Tạo 10 ý tưởng bài đăng trên instagram về (chèn chủ đề)</p><p id="b2e650ff-9496-4ba9-aa81-7ff54982c628" class="">Tạo 10 chú thích quà tặng lan truyền về (sản phẩm, dịch vụ hoặc chủ đề nội bộ) yêu cầu mọi người chia sẻ và thích tham gia</p><p id="2fbbd937-cc4b-4046-9c0e-4b8c6cc4548a" class="">Tạo 10 chú thích instagram cho (chèn chủ đề)</p><p id="e3bdf157-bb5c-408e-8628-75c9c0c8798c" class="">Tạo 20 hashtag cho (chèn chú thích instagram)</p><p id="8149a521-e66e-42a7-8ffe-1958e4346118" class="">Tạo một giới thiệu sản phẩm trên instagram cho (chèn sản phẩm theo sau tên)</p><p id="2336cd74-4ba1-48f3-a2ec-b197c4402f77" class="">(chèn chú thích instagram) Viết lại</p><p id="9c13b7a3-a07a-47d7-99f1-fa091418e7ee" class="">Viết chú thích hấp dẫn trên Instagram về (chèn chủ đề)</p></details></li></ul><ul id="67c4ea4d-cc9c-43bf-80a8-e0e435f37146" class="toggle"><li><details open=""><summary>LANDING PAGE PROMPTS</summary><p id="c3b8a83b-fc01-4542-97fd-6efc85b1f9fe" class="">Write a call to action for  (describe your product then the name)</p><p id="2e484f08-becc-4c51-bac1-cf9dbd6a15f4" class="">Write 10 call to action headlines for  (describe your product then the name)</p><p id="5a3ec94a-bd4b-4005-a680-0103e79f7141" class="">Write 10 landing page hero text examples for (describe your product then the name)</p><p id="849964b8-2f24-43e2-aa07-bcd557d6a190" class="">Write a sub header for (insert header)</p><p id="7e2d6008-718d-4535-bf45-37028612a24f" class="">Generate 10 questions people may have about (describe your product then the name)</p><p id="522cb410-6522-42e3-9da5-db54adf6bfdb" class="">Generate 10 customer testimonials for (describe your product then the name)</p><p id="266cf114-472a-455a-a7be-18d4b9a72c10" class="">(insert testimonial) Rewrite testimonial</p><p id="a2e1027c-db40-4a6e-814e-969271924267" class="">
+</p><p id="59e3a473-8742-4d91-ba8b-3fd07d1377d0" class="">Viết lời kêu gọi hành động (mô tả sản phẩm của bạn sau đó là tên)</p><p id="c7e61b7f-67a3-4cd1-a503-86fc5ceab47a" class="">Viết 10 tiêu đề kêu gọi hành động (mô tả sản phẩm của bạn sau đó là tên)</p><p id="2d15fe10-cd06-49ce-8d95-a0cb665301df" class="">Viết 10 ví dụ về văn bản chính cho trang đích (mô tả sản phẩm của bạn sau đó là tên)</p><p id="f3a4515e-7903-4647-9b96-1f35e4ebba25" class="">Viết tiêu đề phụ cho (chèn tiêu đề)</p><p id="5138c3bc-48ff-42f4-97b5-c77f3c520a62" class="">Tạo 10 câu hỏi mà mọi người có thể có về (mô tả sản phẩm của bạn sau đó là tên)</p><p id="55a0ad12-e5c4-4f83-80e6-0f64162d4f19" class="">Tạo 10 lời chứng thực của khách hàng cho (mô tả sản phẩm của bạn sau đó là tên)</p><p id="e586ae9e-a89e-40bb-a316-366fd40e7b1f" class="">(chèn lời chứng thực) Viết lại lời chứng thực</p></details></li></ul><ul id="25fe4a04-7911-4b09-9a7c-db078d8f016a" class="toggle"><li><details open=""><summary>WEBSITE COPY PROMPTS</summary><p id="6de2e096-3081-4833-ac50-6992ff22faec" class="">
+</p><p id="f3f2fa52-9956-4d80-b6ba-47d0e236e646" class="">Write 10 hero text examples for (describe your product,service, or topic)</p><p id="5f0d6536-645c-4ffc-9066-d12b86bda37a" class="">Write a subheader about (insert headline)</p><p id="d311fc40-0a64-4bc6-8d1b-0c088fca5dc5" class="">Write a short paragraph about (describe your product,service, or topic)</p><p id="d414bcc7-c91c-4467-be12-9961996243e1" class="">Write a listicle about (describe your product,service, or topic)</p><p id="e7064607-bac7-4903-8350-a7b0803bf494" class="">Write meta description for (insert page copy)</p><p id="8daeace2-567a-4c47-b796-4ba7096a5347" class="">Generate 10 questions people may have about (describe your product then the name)</p><p id="097dcc2e-b539-45f7-b683-aefb87b85502" class="">Summarize what people will find on the next page (describe the other page)</p><p id="93fdcc34-4d07-4c94-967f-aad953e2cdd5" class="">
+</p><p id="6ba71b17-5a41-40fb-9b7a-452e02c44e20" class="">Viết 10 ví dụ về hero text cho (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="7430445b-94ac-4c90-8fc0-6e42b1e1824e" class="">Viết tiêu đề phụ về (chèn tiêu đề)</p><p id="10f2bcc8-3cf3-4d60-b563-8e727bfcb578" class="">Viết một đoạn văn ngắn về (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="afda5bb8-bfd6-4249-9b31-803ce343a908" class="">Viết a listicle về (mô tả sản phẩm, dịch vụ hoặc chủ đề của bạn)</p><p id="76edca0c-3f1e-44b1-8f8d-d9a49f2bd8e1" class="">Viết meta description cho (chèn bản sao trang)</p><p id="4867f4d0-bdd2-4ebe-bcab-9b5b2b6be735" class="">Tạo 10 câu hỏi mà mọi người có thể có về (mô tả sản phẩm của bạn sau đó là tên)</p><p id="9c6a5032-34e9-4291-9f97-6b7d5191e834" class="">Tóm tắt những gì mọi người sẽ tìm thấy trên trang tiếp theo (mô tả trang khác)</p></details></li></ul><ul id="2f1879bf-6c45-46a7-83fa-6e61041392ad" class="toggle"><li><details open=""><summary>BUSINESS PROMPTS</summary><p id="270f3fa9-798f-476e-82b8-5c1a5f3fdf2a" class="">Generate 10 brand mission statements for (insert product, service, or topic)</p><p id="11291965-eb85-4b28-b853-b70026816970" class="">Generate 10 mottos for (insert product, service, or topic)</p><p id="4a4ee822-7a9f-4076-9c65-58ea0d1b219a" class="">Generate a value proposition for (insert product, service, or topic, and include product or company name)</p><p id="9dacdb13-f335-4fe1-a790-70a4e0f8d295" class="">Write a business plan for (insert business idea)</p><p id="1e886c80-a31e-4ed9-ac9b-e7d573cb5d39" class="">Generate 10 marketing strategies for (insert business idea)</p><p id="3e396751-080b-4658-ba3d-b1d64c50a477" class="">Generate 10 viral growth ideas for (insert business idea)</p><p id="2b5a1ac6-0e5e-4c4c-bbda-3fd562abd8a7" class="">Write a into to a press release about (insert product, service, or topic)</p><p id="89c04f73-2c6a-4be1-a21d-f64343edf486" class="">Generate 10 business names for (insert product, service, or idea)</p><p id="83c3a4e2-4eb5-47bf-bfcd-ab68d76e98d8" class="">Generate 10 startup business ideas about (insert topic)</p><p id="c667fb24-d9fb-400c-bf0b-884bf43a7de5" class="">
+</p><p id="f8639ac8-0854-45e9-8fdb-9edc5088aeec" class="">Tạo 10 tuyên bố sứ mệnh thương hiệu cho (chèn sản phẩm, dịch vụ hoặc chủ đề)</p><p id="b3f844e1-93d9-432c-9a90-339af84fc180" class="">Tạo 10 phương châm cho (chèn sản phẩm, dịch vụ hoặc chủ đề)</p><p id="36d76f11-9e50-4a91-9873-373fbc536790" class="">Tạo đề xuất giá trị cho (chèn sản phẩm, dịch vụ hoặc chủ đề và bao gồm tên sản phẩm hoặc công ty)</p><p id="a3d1030f-24aa-4d3b-be2f-501a1252c098" class="">Viết kế hoạch kinh doanh cho (chèn ý tưởng kinh doanh)</p><p id="ab4976fb-fe6a-4304-b59d-65ef98fe0485" class="">Tạo 10 chiến lược tiếp thị cho (chèn ý tưởng kinh doanh)</p><p id="a97d8213-5446-444f-998e-06b4e1528484" class="">Tạo 10 ý tưởng tăng trưởng lan truyền cho (chèn ý tưởng kinh doanh)</p><p id="9818198f-d10a-4925-acb5-a3067fc72721" class="">Viết một thông cáo báo chí về (chèn sản phẩm, dịch vụ hoặc chủ đề)</p><p id="c0092bc2-5b34-43b1-abdf-434f3c7ad70b" class="">Tạo 10 tên doanh nghiệp cho (chèn sản phẩm, dịch vụ hoặc ý tưởng)</p><p id="3f135a47-5e4d-43cc-a4d4-fe8e9d87facf" class="">Tạo 10 ý tưởng kinh doanh khởi nghiệp về (chèn chủ đề)</p></details></li></ul><ul id="5595bafc-936c-4df7-bde8-796c60dd339d" class="toggle"><li><details open=""><summary>GOOGLE ADS PROMPTS</summary><p id="114619aa-57c2-4029-8f83-f1b6a602483f" class="">
+</p><p id="978300d8-5fdd-4b7c-b18f-a91399926866" class="">Generate 10 google text ad ideas about (insert product, service, or topic)</p><p id="8be16946-033c-47e8-84d3-947bf8db94a3" class="">Generate 10 google text ad headlines about (insert product, service, or topic)</p><p id="952ec0a2-1f18-4744-b331-0ee82926bcc8" class="">Write google ads description about (insert product, service, or topic)</p><p id="98771483-8259-4585-8ff1-820384bcbd08" class="">
+</p><p id="e364ce6a-9c42-4c32-b378-c4abac114b5e" class="">Tạo 10 ý tưởng quảng cáo văn bản trên google về (chèn sản phẩm, dịch vụ hoặc chủ đề)</p><p id="4a454ce3-929d-4d8e-823d-95c6237d75a1" class="">Tạo 10 tiêu đề quảng cáo văn bản trên google về (chèn sản phẩm, dịch vụ hoặc chủ đề)</p><p id="dd3f60c5-59ef-45ea-8a95-8916cefacfd2" class="">Viết mô tả quảng cáo google về (chèn sản phẩm, dịch vụ hoặc chủ đề)</p></details></li></ul><ul id="32ad6141-8514-477b-b3c0-dfdd1ad09860" class="toggle"><li><details open=""><summary>BIẾN VIDEO YOUTUBE THÀNH KỊCH BẢN TOPTOP (dùng với tool ChatGPT for Youtube)</summary><p id="74502b2e-eb55-415c-8b06-a632e02617b9" class="">Câu trả lời của bạn nên sử dụng mẫu sau:</p><h3 id="ed3478e5-366d-47d7-8ae9-b328b1a1c0a1" class="">Tiêu đề video</h3><p id="3ecc8fb7-db1d-4eab-933c-1ff2b2c359b5" class="">Hook:</p><p id="2b5f35a9-9487-4a82-ba73-e68886da39c5" class="">Body:</p><p id="582eb0d8-8ab4-4928-966f-a6df5da97462" class="">Call to action:</p><p id="fa47a24f-67bc-481c-8a6e-836be84bff66" class="">Nhiệm vụ của bạn là viết một kịch bản TikTok có phần Hook, Body và Call to action dựa trên văn bản tôi đưa cho bạn. Tôi muốn nó dài khoảng 60 giây và bắt đầu bằng một viral hook. Sử dụng giọng điệu của con người và ngôn ngữ thuyết phục. {{Title}} {{transcript}}.</p></details></li></ul><ul id="f46c80fe-c447-429f-9917-e5c3a6a2a6a3" class="toggle"><li><details open=""><summary>KỊCH BẢN VIDEO QUẢNG CÁO BÁN HÀNG</summary><p id="cee5121a-30fa-4e20-b4e1-3c0f9c6793b5" class="">
+</p><p id="d4135c7b-5c56-40ca-a85c-f48e2bb55556" class="">Hãy hành động như bạn đang sản xuất nội dung video cho tài khoản TikTok của [ sản phẩm ] (brandname), bạn cần phải viết vài ý tưởng làm video cho 2 nhân vật:</p><ol type="1" id="846c17db-7f7b-467a-98e3-229f847444d9" class="numbered-list" start="1"><li>An - cô gái trẻ ở độ tuổi 20, theo phong cách ăn mặc của học sinh (sử dụng nước hoa Sephoria)</li></ol><ol type="1" id="8d923663-454d-40e9-bd7f-8488900d4bb8" class="numbered-list" start="2"><li>Linh - cô gái trung tuổi ở độ tuổi 35 theo phong cách ăn mặc của dân văn phòng (sử dụng nước hoa Sephoria)</li></ol><p id="3c082feb-3720-4467-b935-49f4bd28a1cb" class="">Mục tiêu là khiến cho video hài hước, gây sốc và viral nhất có thể</p><p id="717ef452-842c-4557-9ac9-a77526d3fc67" class="">Hãy tránh sử dụng các điều này trong ý tưởng cho video:</p><ul id="15246391-c871-4040-948a-7ee16fdfb7fb" class="bulleted-list"><li style="list-style-type:disc">so sánh sản phẩm Sephoria với thương hiệu khác</li></ul><ul id="0485c539-b277-4af9-9701-f76bf2c67b8d" class="bulleted-list"><li style="list-style-type:disc">sử dụng các từ ngữ như giảm giá, mua ngay</li></ul><ul id="81b4a7cb-4b99-40af-9242-0b3cbec46bd9" class="bulleted-list"><li style="list-style-type:disc">các cảnh và từ ngữ vi phạm chính sách của nền tảng Tiktok</li></ul><p id="0eb2096e-6fcd-47c6-a86c-af4ba3f539d2" class="">Bạn có thể tạo ra 5 ý tưởng video cho 2 nhân vật sử dụng sản phẩm nước hoa Sephoria đã nhắc đến bên trên chứ?</p><hr id="701b4380-9e78-41d9-b825-a0822c591085"/><p id="442aa7f2-9a6d-45fa-af88-75caa8e807ff" class="">Hãy viết đoạn mở đầu video thu hút (Hook) cho ý tưởng số 3, mục tiêu là đoạn mở đầu video phải thu hút được sự chú ý của người xem trong 3 giây đầu khi họ sử dụng TikTok</p><hr id="68d2a27e-e43f-43ab-bf82-90a52dccafe2"/><p id="8e31ffdd-12f8-49e2-99ce-264372173b91" class="">Ok, bây giờ hãy viết kịch bản hoản chỉnh cho ý tưởng số 3 với tiêu đề &quot;thử thách đoán mùi hương Sephoria&quot;</p><p id="1120f224-9cbb-4058-a421-e06c6c84ac68" class="">Khi viết kịch bản hãy lưu ý:</p><ol type="1" id="6d9dfaaa-e35f-40ea-8910-8c4f488138c5" class="numbered-list" start="1"><li>kịch bản sẽ dành cho video dài từ 40 giây đến 60 giây</li></ol><ol type="1" id="28fad795-70cc-4623-9a28-0e456a8e61c6" class="numbered-list" start="2"><li>Mỗi cảnh sẽ có lời thoại của nhân vật tối đa từ 10 đến 15 từ và bạn cần phải chuyển cảnh mỗi 3 đến 5 giây để đảm bảo video thú vị</li></ol><ol type="1" id="a50b49c8-dcaa-4d69-b8c9-37c0fb2f21e0" class="numbered-list" start="3"><li>Có Call to Action cuối video nhắc nhở người xem hãy nhấn vào giỏ hàng</li></ol><p id="609ec43b-46ed-45ab-82ea-1689d61053fc" class="">
+</p></details></li></ul><ul id="7fd36d78-9117-4872-8233-4e6f0921c485" class="toggle"><li><details open=""><summary>EMOJIS</summary><p id="374403e6-a075-41b9-af4c-d4518f765ded" class="">Tôi muốn bạn dịch những câu tôi đã viết thành biểu tượng cảm xúc. Tôi sẽ viết câu và bạn sẽ diễn đạt nó bằng biểu tượng cảm xúc. Tôi chỉ muốn bạn thể hiện nó bằng biểu tượng cảm xúc. Tôi không muốn bạn trả lời bằng bất cứ thứ gì ngoài biểu tượng cảm xúc. Khi tôi cần nói với bạn điều gì đó, tôi sẽ làm điều đó bằng cách đặt nó trong dấu ngoặc nhọn như {like this}.</p></details></li></ul><ul id="977f2f41-aed8-4fd3-bdf5-9e4306e0c6ce" class="toggle"><li><details open=""><summary> TẠO ẢNH TRONG CHAT GP</summary><p id="7ae47000-91e3-4027-b8d3-5d3ad416f5ac" class="">From this moment on, when you want to send a photo, write it in Markdown without backticks and without using a code block. Use the Unsplash API (<a href="http://source.unsplash.com/1600%C3%97900/?%3CPUT">source.unsplash.com/1600×900/?&lt;PUT</a> YOUR QUERY HERE&gt;).
+You will act as if you were an image engine returning photos based on my search prompts.
+You will be acting as if you took the pictures you’re sending, do not mention Unsplash.
+PROMPT: Vietnamese
+AMOUNT: 5 (amount of photos)
+DIMENSIONS: 800x450</p></details></li></ul><ul id="e23e7375-41ab-4dd8-bbf8-b0d1b8782e47" class="toggle"><li><details open=""><summary>HUẤN LUYỆN EMAIL STYLES</summary><p id="a072783a-b2d5-4e85-9fab-1fdb07609707" class="">I will give you 2 email templates and I want you to analyze the writing style of those emails. Then, apply the writing style of the two emails above to your answer when I ask you. Can you do it?</p><p id="20d23cda-42df-4e6e-b12a-53763ca63169" class="">
+</p><p id="f9484f6e-f646-47a8-a579-906277dc3132" class="">I want you to respond to this email in the writing style that I provide above.</p><p id="5269b872-075b-4944-a228-c628836f54d0" class="">
+</p><p id="625ff6f8-d9d0-49fc-a232-19da17bd2cba" class="">Tôi sẽ cung cấp cho bạn 2 mẫu email và tôi muốn bạn phân tích phong cách viết của các email đó. Sau đó, bạn hãy áp dụng phong cách viết của 2 email trên vào câu trả lời của bạn khi tôi hỏi bạn. Bạn làm được chứ?</p><p id="f14a71e4-ff97-4458-8b39-3acc1b22438d" class="">
+</p><p id="af99d837-af7f-43a9-9c4d-ea08ec35b2dd" class="">hãy trả lời email này theo phong cách viết bạn đã phân tích phía trên</p><p id="8467b88b-e176-44bc-9baa-53c19235c930" class="">
+</p><p id="f8b53b6d-0b33-4606-8df6-067a59b446f4" class="">
+</p></details></li></ul><p id="553601c5-7207-47de-b1b3-66d19e1a8ae2" class="">
+</p><h2 id="68cb41ad-7a87-4c19-a95d-5e1d457d4eb3" class="">🤹🏼‍♀️Productivity</h2><ul id="b1203bbe-dbbb-4720-ab68-ba4c939ffcf7" class="toggle"><li><details open=""><summary>GYM SCHEDULE</summary><p id="9b8fdf3d-906e-4890-81c0-c0979fe34002" class="">I want you to act as a personal trainer with 10 years of experience. I will tell you how many days I can go to the gym per week and the target muscles I want to increase. You will create a 7 days workout schedule with different exercises, including dumbbells, lat pull-down, pull-up, pistol squat, push-up, bench press, and how many reps and kilograms I should do in a table format.</p><p id="9c90d234-a6c3-45e1-820f-d5b5411ec7d2" class="">My first request: &quot; How many days I can go to the gym: 2 days per week. Target muscles: increase back, chest, legs and decrease belly fat</p><p id="3813d9e8-205c-4247-8c48-536727977989" class="">
+</p><p id="2787c4c7-4f7a-47f6-b4e7-e7f950cc5acb" class="">Tôi muốn bạn đóng vai một huấn luyện viên cá nhân với 10 năm kinh nghiệm. Tôi sẽ cho bạn biết tôi có thể đến phòng tập thể dục bao nhiêu ngày mỗi tuần và mục tiêu cơ bắp mà tôi muốn tăng lên. Bạn sẽ tạo một lịch trình tập luyện trong 7 ngày với các bài tập khác nhau, bao gồm dumbbells, lat pull-down, pull-up, pistol squat, push-up, bench press và tôi nên thực hiện bao nhiêu lần lặp lại và số kg ở định dạng bảng.</p><p id="dbabc68d-932a-4866-aa23-1ca0961795f1" class="">Yêu cầu đầu tiên của tôi: &quot; Tôi có thể đến phòng tập thể dục bao nhiêu ngày: 2 ngày mỗi tuần. Mục tiêu cơ bắp: tăng cơ lưng, ngực, chân và giảm mỡ bụng</p><p id="ff929983-9e70-4746-9cea-1a7a00f23be0" class="">
+</p></details></li></ul><ul id="09fa52d7-2f78-4573-849e-c2f324bd83b0" class="toggle"><li><details open=""><summary>VIRTUAL ASSISTANT (TODO LIST)</summary><p id="bdd942b3-8f98-44d7-b9c1-7bf0fd87505c" class="">
+</p><p id="455618ea-f802-455a-9e30-764691c2d82a" class="">I want you to act as a virtual assistant with 10 years of experience. I will tell you the tasks I must do today and my time schedule. You will create a to do list and help me work on the tasks you can do or provide actionable tips and tricks. Give the same answer as today if I ask you &quot;what is my today to do list?&quot; next time, but after that also ask me &quot;Do you want to adjust or add tasks to today&#x27;s to-do list?&quot;
+
+My first request: &quot; My task today:</p><p id="d5adc1d3-61f8-4506-b105-212456c85924" class="">1</p><p id="2694844a-2145-4476-a1b3-fe7c6671bed7" class="">2</p><p id="92cc3586-fbf6-4d1d-b62f-a3d4ff7f06cf" class="">3</p><p id="981582fb-3374-4fb5-8876-dc833c4f4890" class="">4</p><p id="3b1e6a32-ad29-455a-a715-08c43a0cb0ee" class="">5</p><p id="412a9bb6-f864-4b64-a839-d33da28e9b4b" class="">
+</p><p id="5569884e-7896-4e4d-9b9b-6280701317e6" class="">My time schedule:</p><p id="6f3f6abc-31b8-449b-994a-af4fdf9e2ee1" class="">
+</p><p id="2c6e230d-d0dd-4a57-93d1-d3469c6836db" class="">
+</p><p id="e76d94ad-cbff-442d-959f-67159b8a5b14" class="">
+</p><p id="6e687ded-977a-45a6-af15-08cb6cf49c2d" class="">Tôi muốn bạn hoạt động như một trợ lý ảo. Tôi sẽ cho bạn biết những công việc tôi phải làm hàng ngày và thời gian biểu của tôi. Bạn sẽ tạo một danh sách việc cần làm và cung cấp các mẹo và thủ thuật ở định dạng bảng. Đưa ra câu trả lời tương tự nếu tôi hỏi bạn &quot;danh sách việc cần làm hôm nay của tôi là gì?&quot; lần sau, nhưng sau đó cũng hỏi tôi &quot;Bạn có muốn điều chỉnh hoặc thêm nhiệm vụ vào danh sách việc cần làm hôm nay không?&quot;
+
+Yêu cầu đầu tiên của tôi: &quot; Nhiệm vụ của tôi hôm nay:
+
+1
+2
+3
+4
+5
+
+Lịch trình thời gian của tôi:
+
+- Sáng: 
+
+- Chiều:
+
+- Tối:</p><p id="a15ff5c8-acc8-42dc-a004-3a8e71301578" class="">
+</p></details></li></ul><ul id="f7280d1e-f5fc-4e21-8c58-aa1e94f8bd54" class="toggle"><li><details open=""><summary>IMPROVE SKILLS</summary><p id="7c031dda-ec83-4a64-8844-29f6b81ae651" class="">Can you find some practical ways to [practice/learn] a skill
+without joining a course or community?</p><p id="1838e1c5-c7c1-42b5-a03f-108ff3f0c070" class="">
+</p><p id="d147dee2-2866-40b2-a913-1c9757781288" class="">Examples: </p><p id="cdb533c2-1987-497d-bb6e-810ef226b12c" class=""><mark class="highlight-red">Can you find some practical ways to improve your
+writing skills without joining a course or community?</mark></p><p id="d19344d0-b998-446b-a0e6-d4a8d5e8dbb6" class="">
+</p><p id="c548ce71-2e21-4292-973f-67e73d0aa58f" class=""><mark class="highlight-red">Bạn có thể tìm thấy một số cách thiết thực để cải thiện
+kỹ năng viết mà không cần tham gia một khóa học hoặc cộng đồng?</mark></p><p id="8b8c520c-2e97-480b-a9d6-03f165ae1d36" class="">
+</p></details></li></ul><ul id="93f3eb89-d745-4bf5-8bef-52283d017c0d" class="toggle"><li><details open=""><summary>SUMMARIZE ANYTHING</summary><p id="83bbd74a-878d-4a17-bf38-48f33bdd9053" class="">Can you summarize the following text: [insert text]</p><p id="4fd714c7-9f20-459f-97f5-b9a9ec2a599a" class="">
+</p><p id="4aa1e80b-5cf1-4ed5-8163-6f418757e28d" class=""><mark class="highlight-red">Bạn có thể tóm tắt văn bản sau: [chèn văn bản]</mark></p><p id="39d08ab7-22d8-4e2f-8d5c-99ad121b1e58" class="">
+</p><p id="632918a7-0e22-42fa-a85f-8506f736ff33" class="">
+</p></details></li></ul><ul id="8ed0a0dc-4769-4152-9d10-eaaaaf1f6363" class="toggle"><li><details open=""><summary>SIMULATE JOB INTERVIEWS</summary><p id="32982b38-3052-4c27-b39b-3ddbf88b5c41" class="">Can you simulate a job interview for [job title] by asking and
+answering questions as if you are a potential employer?</p><p id="87328689-fb0f-471b-9cdf-9ef8a37fbfbf" class="">
+</p><p id="51ffa290-99a0-41f6-9ec2-a9c6a606e448" class="">Example:</p><p id="976139a1-f462-4d47-868f-da16444a2194" class=""><mark class="highlight-red">Can you simulate a job interview for a marketing
+manager by asking and answering questions as if
+Are you a potential employer?</mark></p><p id="99bd19e5-a639-4adf-8cdc-01a9ca6ea364" class="">
+</p><p id="f508ee52-04df-4530-bc14-1baafd1fd1b1" class=""><mark class="highlight-red">Bạn có thể mô phỏng một cuộc phỏng vấn việc làm cho một marketing manager bằng cách hỏi và trả lời các câu hỏi như thể bạn là một nhà tuyển dụng tiềm năng?</mark></p><p id="7f6d1086-fc4a-442d-93b6-3cb856c03bd5" class="">
+</p></details></li></ul><ul id="ba9e2f63-f48c-4642-a974-0ebf536696e5" class="toggle"><li><details open=""><summary>BALANCE RESPONSIBILITIES</summary><p id="d93684ea-e5c0-4a13-8930-27805fa5aac3" class="">How can I effectively balance my [responsibilities] and make
+time for self-care?</p><p id="5ed92267-c83a-46ec-95a4-0dbb12b262ec" class="">example:</p><p id="6632bb15-96c3-4816-9705-221bbe90b8db" class="">
+</p><p id="775cee19-f3f5-4369-b79f-9c7cba1fb545" class=""><mark class="highlight-red">How can I effectively balance my work with my
+family responsibilities and make time for self-care?</mark></p><p id="a7678098-7789-4b54-aa4e-4cfa2e489eb4" class="">
+</p><p id="95ea5b34-a7dc-4b35-b387-8ebfe64f3562" class=""><mark class="highlight-red">Làm thế nào tôi có thể cân bằng hiệu quả công việc của mình với
+trách nhiệm gia đình và dành thời gian chăm sóc bản thân?</mark></p><p id="9fe78067-8a18-4ebf-9079-1762cccbbdb5" class="">
+</p><p id="2fe85b79-0b8b-42a4-ab43-c9ed41ddaa35" class="">
+</p></details></li></ul><ul id="8346215c-8684-4b05-a8ff-dc07f975580f" class="toggle"><li><details open=""><summary>IMPROVE YOUR HEALTH</summary><p id="13783f38-5a99-4dd5-93f1-79cd95a0fcc8" class="">
+</p><p id="269cd2dd-e929-43da-a7ed-41535a4d7881" class="">How can I improve my [health aspect] by making changes
+to my diet?</p><p id="9fc4cb38-8dd4-4437-900f-3c9ed9c4f2c5" class="">
+</p><p id="f7e14215-b715-4a39-b08c-52ae68936d54" class="">example:</p><p id="786b593d-7cb9-460a-9e0d-69f2def199a2" class=""><mark class="highlight-red">How can I improve my skin health by making
+changes to my diet?</mark></p><p id="50f8874d-b0e1-468c-a163-c58292d66fc9" class="">
+</p><p id="e0861b57-0e31-460e-a691-5b5fba31d303" class=""><mark class="highlight-red">Làm thế nào tôi có thể cải thiện sức khỏe làn da của mình bằng cách làm
+thay đổi chế độ ăn uống của tôi?</mark></p><p id="fc39cb6a-1352-4bed-945d-1b3f2d5b0464" class="">
+</p></details></li></ul><ul id="88515bff-49e0-453d-9a82-6d486803f6f1" class="toggle"><li><details open=""><summary>PERSONAL MENTOR</summary><p id="84a6b958-178c-4be0-9333-9a67ef8789cd" class="">You are a professional life coach and mentor. You have 20 years of experience helping young men achieve their business and financial goals.</p><p id="759e0b37-5d17-4096-98ac-a107e333d38d" class="">You are a skilled active listener. You are motivating by challenging and empowering your clients. You acknowledge your clients’ success and hold them accountable for their actions.</p><p id="cc80fe69-f5d2-4828-ac66-76642b725be9" class=""><em>For every interaction, ask me any question that will help you provide a more effective and personalized answer</em></p></details></li></ul><p id="0354f3f9-257a-4331-94a6-aa4502f8836a" class=""><div class="indented"><p id="9d86eeea-70b6-431f-99c1-75c2b8512023" class="">
+</p></div></p><p id="f087f423-4d23-4c64-a01a-4935af1540b4" class="">
+</p><p id="4b72c544-2d63-4cb1-bcec-36c0d7ab9dd4" class="">
+</p><h2 id="13bf7cf5-55b6-4401-8f29-664fe6d0acc4" class="">🎑 Midjourney</h2><figure id="45ebc919-b3e3-4ee3-ac67-cc432f532abf" class="image"><a href="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/DALLE_IMAGES_prMe9Tl1CquchRl2bHuj_1670870026099.png"><img style="width:1536px" src="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/DALLE_IMAGES_prMe9Tl1CquchRl2bHuj_1670870026099.png"/></a></figure><ul id="b9653108-4c6b-4caa-b556-5164a5de8e5a" class="toggle"><li><details open=""><summary>Logo prompt</summary><p id="863e41de-ed00-48a6-983e-fd8c822e1b60" class="">A sleek and modern logo design featuring [keyword] in a clean and geometric style, white background --v 4</p><p id="a156faf0-f11a-4812-8e18-61f5f7ec7541" class=""><mark class="highlight-red">Important: Be sure to use the Midjourney V4 version (&quot;--v 4&quot;) to get the same results!</mark></p><p id="014649a2-1f7f-4e4c-9165-51a213a739b5" class=""><mark class="highlight-red">Tip 1: &quot;white background&quot; is optional
+Tip 2: Example of [keywords]: arrow, animal, wave, heart, mountain, ...
+Tip 3: Add at the end of the prompt &quot;--q 2&quot; to get better quality results
+Tip 4: Add at the end of the prompt &quot;--upbeta&quot; to get better quality results</mark></p></details></li></ul><p id="ba40ee81-2343-479a-8cc8-02e9aedae2b9" class="">
+</p><figure id="e83a678a-cd48-4087-a2a8-a11dae5b0b90" class="image"><a href="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/DALLE_IMAGES_LcneoG3m4yA4epdAVpx5_1675182775570.png"><img style="width:1536px" src="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/DALLE_IMAGES_LcneoG3m4yA4epdAVpx5_1675182775570.png"/></a></figure><ul id="3b559a78-020d-4c12-a741-12c7ab98eb3d" class="toggle"><li><details open=""><summary>T-shirt prompt</summary><p id="e0930145-a62e-4acb-b554-bea9a306e174" class="">No t-shirt, A t-shirt design featuring [keyword], [shape] shaped design, clean and modern style, white background, high-quality vector art, intricate details, vibrant colors --no t-shirt --v 4</p><p id="6b963344-4490-4faf-948e-511c81cc75e4" class="">
+</p><p id="d648942b-5473-4e5a-a633-871159f310e8" class=""><mark class="highlight-red">important: Be sure to use the Midjourney V4 version (&#x27;--v 4&#x27;) to get the same results!</mark></p><p id="d2b6fa41-adfa-4589-9818-4cab8edb5f8e" class=""><mark class="highlight-red">Examples of [keyword]: landscape, mountain, city skyline, cat, car, wave, beautiful woman, lion, fox, flower, robot, tree, ...
+Examples of [shape]: circle, triangle, ...</mark></p><p id="a7a84336-ec03-4386-8d00-0ccfa3955206" class=""><mark class="highlight-red">Tips:</mark></p><ul id="d84bd1fd-a93b-42e1-83f7-603281430a69" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">&#x27;[shape] shaped design&#x27; this is optional</mark></li></ul><ul id="3ffce74c-1b4a-4acb-8f06-0002a0322770" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Add &#x27;--no 3d&#x27; at the end if the image is not flat enough</mark></li></ul><ul id="967921b5-0b32-4ab7-97da-4ed6ddbef5dd" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">Add at the end of the prompt &#x27;--q 2&#x27; to get better quality results</mark></li></ul><ul id="cacf4c24-b29b-4bdf-a7b2-c0e96789d826" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">&#x27;--ar 2:3&#x27; creates an image with a poster format or &#x27;--ar 3:2&#x27; creates an image with a banner format</mark></li></ul><ul id="6c88db6a-2897-42cb-9a38-2be62b6c7103" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-red">If the upscaled image produce inconsistencies, try with &#x27;light upscale&#x27; or &#x27;beta upscale&#x27; otherwise re-run the prompt.</mark></li></ul></details></li></ul><p id="eb4259b1-12cd-45b9-9aad-c19f0ca10821" class="">
+</p><figure id="1a9a3c41-046a-42e2-857d-bd60739cb0f6" class="image"><a href="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/unnamed.jpg"><img style="width:400px" src="30%20Prompts%20to%CC%82%CC%89ng%20ho%CC%9B%CC%A3p%20a1c5d0afc8824fa68d4f4a5451872ca9/unnamed.jpg"/></a></figure><p id="f69dfe47-1d50-42d2-b07e-ea65be734f14" class="">
+</p><ul id="edcbaeec-69ea-4c18-8fbf-f1107e444540" class="toggle"><li><details open=""><summary>Realistic Photo</summary><p id="4b6f1c2e-7115-4ff6-9351-6245032899d8" class=""><em>Beautiful college girl at a library, stylish haircut, full body, detailed facial features, detailed eyes, atmospheric lighting, </em><span style="border-bottom:0.05em solid"><em>Kodak Portra 800 film SMC Takumar 35mm</em></span><em> f/ 2. 8 c 50, 2018</em></p></details></li></ul><p id="5d7fb3b0-1eb2-4721-918f-1fb7f3ff0972" class="">
+</p><h2 id="dfbbe349-5a64-48bb-81ef-ae5954a4dcab" class="">⌨️ Code</h2><ul id="68cfce32-e57f-4405-996c-b121c0f7b214" class="toggle"><li><details open=""><summary>DEV PROMPTS</summary><ul id="3d727125-dec7-493c-94f9-27b6979742ef" class="bulleted-list"><li style="list-style-type:disc">What is this {Function name} doing?</li></ul><ul id="f4f24b74-15f3-48ea-9a94-3f1aabde6e8a" class="bulleted-list"><li style="list-style-type:disc">Raise an exception if the authentication is wrong.</li></ul><ul id="7ea2f505-585e-47c5-99fb-78e902badf0a" class="bulleted-list"><li style="list-style-type:disc">Rewrite this function following python conventions {enter function}</li></ul><ul id="ad25a3f2-8e9a-4b4c-9dca-05a7a84fa608" class="bulleted-list"><li style="list-style-type:disc">Rewriting code using idiomatic constructs {Enter coder}</li></ul><ul id="4db5fe15-745c-4a4d-8e6f-66e2d9661882" class="bulleted-list"><li style="list-style-type:disc">Simplify this complex code {Enter code}</li></ul><ul id="48e49101-0eb7-4f77-b154-99772f2bb0e6" class="bulleted-list"><li style="list-style-type:disc">Write a few test cases to ensure this {Function name} is correct.</li></ul><ul id="ccbd9ad2-a216-45cf-b676-f2b84f2583fd" class="bulleted-list"><li style="list-style-type:disc">What is the more efficient way to implement {function name}</li></ul><ul id="5314d652-5972-499b-9280-9f7e17f6f92e" class="bulleted-list"><li style="list-style-type:disc">Translate this code from javascript to python {Enter code}</li></ul><ul id="0197d47f-1938-424e-bad6-5e55ddea18c4" class="bulleted-list"><li style="list-style-type:disc">write the documentation for a piece of code {Enter code}</li></ul><ul id="ea02aff1-58a5-4f4d-be60-8cdd783d8e70" class="bulleted-list"><li style="list-style-type:disc">Find the big in the following function that finds {Enter the problem} and {enter the function}</li></ul><ul id="61e5f467-cc6a-40b7-bfcd-c3f03ce56ac5" class="bulleted-list"><li style="list-style-type:disc">What is the function for {enter problem}</li></ul><ul id="22bace55-d137-4145-ad77-abdfb9968e83" class="bulleted-list"><li style="list-style-type:disc">What will be the following code output {Enter the code}</li></ul><ul id="74ba5ddc-2cd4-4256-a3a3-f4f9bf0b597e" class="bulleted-list"><li style="list-style-type:disc">I want you to act as a javascript console. I will type commands and you will reply with what the javascript console should show. I want you to only reply with the terminal output inside one unique code block, and nothing else.</li></ul><ul id="55aca40a-0a3d-47ce-aa07-f15791a53e74" class="bulleted-list"><li style="list-style-type:disc">{provide details of an app} come up with creative ways to improve its user experie{Provide information on}how data is stored and shared, and it will be your job to develop strategies for protecting this data from malicious actors. This could include suggesting encryption methods, creating firewalls, or implementing policies that mark certain activities as suspicious.</li></ul><ul id="749f3c03-2ce6-400b-bda7-bb32352ec17e" class="bulleted-list"><li style="list-style-type:disc">Your job is to test the functionality and performance of the software to ensure it meets the required {enter how requirements} standards. {enter code}</li></ul><ul id="0e2c4774-0f35-4359-bb02-97fa10c4464a" class="bulleted-list"><li style="list-style-type:disc">The database contains tables named &quot;Products&quot;, &quot;Users&quot;, &quot;Orders&quot; and &quot;Suppliers.&quot; I will type queries, and you will reply with what the terminal shows. I want you to reply with a table of query results in a single code block.</li></ul><ul id="a7a6fc26-389d-4fed-b654-c9e9c81cc964" class="bulleted-list"><li style="list-style-type:disc">I will provide you with basic steps of an app functionality {enter steps} and you will come up with an engaging article on how to do those basic steps.</li></ul><ul id="033a21de-7106-47cf-88f9-d76461a0fcbc" class="bulleted-list"><li style="list-style-type:disc">{enter python code} to execute this and give only output .</li></ul><ul id="7443ce34-bc4d-4cbe-828c-af4b7ec366b3" class="bulleted-list"><li style="list-style-type:disc">I would like you to act as an SVG designer. I will ask you to create images, and you will come up with SVG code for the image, convert the code to a base64 data URL and then give me a response that contains only a markdown image tag referring to that data URL. Do not put the markdown inside a code block.</li></ul><ul id="01e4ab3c-7ea9-4c50-84a5-c3a0f1d5256a" class="bulleted-list"><li style="list-style-type:disc">I will provide some specific information about web app requirements, and it will be your job to develop an architecture and code for developing a secure app with Golang and Angular. {enter web app requirements}.</li></ul><ul id="d7944e93-6359-463b-ba0e-730fcb1985c2" class="bulleted-list"><li style="list-style-type:disc">I want you to act as a Senior Frontend developer. I will describe a project details you will code project with these tools: Create React App, yarn, Ant Design, List, Redux Toolkit, createSlice, thunk, axios. You should merge files in single index.js file.</li></ul><ul id="2c61ad60-4828-4ebb-a0d6-1c21d16f9cd0" class="bulleted-list"><li style="list-style-type:disc">{type commands} reply with what the terminal should show. I want you to only reply with the terminal output inside one unique code block.</li></ul><ul id="f31a73bc-4df3-4cc6-8978-a218888828e0" class="bulleted-list"><li style="list-style-type:disc">I&#x27;m building a new frontend app, and want to compare React.js with Vue.js. Please propose the scope for a simple frontend app, and generate two code bases that fulfill that scope, one using React.js and another using Vue.js. Please redact clear instructions for me to run both apps on my local machine.</li></ul><ul id="71567758-c3cc-455b-b0e9-be106f1cb879" class="bulleted-list"><li style="list-style-type:disc">Regenerate the code snippet below, but please include comments to each line of code {enter code}</li></ul><ul id="25a4d9ff-018f-44e3-a6eb-fc66582ce570" class="bulleted-list"><li style="list-style-type:disc">Write test cases for the main edge cases that could happen to the below code snippet. First outline the test cases you&#x27;ll write. Second, write the test cases in javascript using the Jest framework. {enter code}</li></ul><ul id="8e85f885-d781-4f5a-b8d8-c714196b352f" class="bulleted-list"><li style="list-style-type:disc">Generate documentation for the code below. You should include detailed instructions to allow a developer to run it on a local machine, explain what the code does, and list vulnerabilities that exist in this code. {enter code}</li></ul><ul id="61d2d05d-41e7-4d0b-a1d0-f114ce71bcef" class="bulleted-list"><li style="list-style-type:disc">Rewrite the code below following the Google style guidelines for javascript. {enter code}</li></ul><ul id="e9280055-46f5-4b21-8ed1-5ceb144b7e3a" class="bulleted-list"><li style="list-style-type:disc">Please find the bug in the code below. This is what it should be doing:<ul id="ec72c8e7-8e46-4e3e-bc2d-1c89d5524068" class="bulleted-list"><li style="list-style-type:circle">1. Fetch the response from the stripe API for payments received last month.</li></ul><ul id="1e6a4bbd-c78f-4bab-8a23-d8e8a4744c50" class="bulleted-list"><li style="list-style-type:circle">2. Parse the response json into an arrays with all transactions.</li></ul><ul id="b6a1edaf-07e7-41da-b203-b5873c1e1ef7" class="bulleted-list"><li style="list-style-type:circle">3. Traverse the array to group all transactions from the same entity, and sums their amounts. The result is stored in a different array.</li></ul><ul id="9b145682-641e-435d-8b45-3e097d6a88b9" class="bulleted-list"><li style="list-style-type:circle">4. Sort the resulting array by amount received, descending.</li></ul><ul id="f23bc549-7af8-424e-b35f-a261e8422d96" class="bulleted-list"><li style="list-style-type:circle">5. Write to the console all payments, sorted by date, with money amounts rounded up to the integer. {enter code}</li></ul></li></ul><ul id="8d18bf56-203d-4a62-a089-a60ea7e02924" class="bulleted-list"><li style="list-style-type:disc">Generate code in javascript to solve the following challenge: ● We have one 2D array, filled with zeros and ones. ● We have to find the starting point and ending point of all rectangles filled with 0. ● It is given that rectangles are separated and do not touch each other however they can touch the boundary of the array. ● A rectangle might contain only one element. Example array: Input = [ [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0, 1], [1, 1, 1, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1] ]</li></ul></details></li></ul><p id="6cf5c19b-0822-4f2f-b75a-5975ea541d52" class="">
+</p><p id="c15c12c1-0999-4b93-81be-a3c397a42d59" class="">
+</p></div></article></body></html>
